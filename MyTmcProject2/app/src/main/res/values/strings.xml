@@ -1,0 +1,138 @@
+<!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<resources>
+
+    <string name="app_name">My Tmc Project</string>
+    <string name="Home_string">Main</string>
+    <string name="About_Us_string">About us</string>
+    <string name="View_event_string">View Event</string>
+    <string name="Register_string">Register</string>
+    <string name="Login_string">Login</string>
+    <string name="Contact_Us_string">Contact Us</string>
+    <string name="Course_string">Course</string>
+    <string name="facebook_app_id">1370661642999941</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="new_string">new</string>
+    <string name="open_string">open</string>
+    <string name="save_string">save</string>
+    <string name="btn_Login_Admin">Login Admin</string>
+    <string name="btn_Login_Staff">Login Staff</string>
+    <string name="btn_Login_Lecture">Login Lecture</string>
+    <string name="btn_Login_Student">Login Student</string>
+    <string name="Staff_Name">Staff Name</string>
+    <string name="Staff_Emall">Staff Email</string>
+    <string name="password">Password</string>
+    <string name="Confirm_password">Confirm Password</string>
+    <string name="add">Add Staff</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_Search">Search</string>
+    <string name="btn_delete">Delete</string>
+    <string name="name">Name :</string>
+    <string name="Contact_No">Phone No:</string>
+    <string name="email">Email :</string>
+    <string name="Event">Event :</string>
+    <string name="date">Date :</string>
+    <string name="btn_Selete_date">Select Date</string>
+    <string name="Time">Time :</string>
+    <string name="btn_time">Select Time</string>
+    <string name="btn_register">Register</string>
+    <string name="Lecture_Name">Lecture Name :</string>
+    <string name="Lecture_Emall">Email :</string>
+    <string name="Lecture_State">Full-Time/Part-Time :</string>
+    <string name="Lecture_Course">Course :</string>
+    <string name="Student_Name">Name :</string>
+    <string name="Student_Emall">Email :</string>
+    <string name="Student_enrollment_date">Enrollment Date :</string>
+    <string name="Student_Type">Student Type :</string>
+    <string name="Student_Course">Course :</string>
+    <string name="btn_Student_update">Student Update</string>
+    <string name="Btn_Student_add">Add Student</string>
+    <string name="date_time">Date/ Time :</string>
+    <string name="username_text">Username:</string>
+    <string name="password_text">Password:</string>
+    <string name="attempts_text">attempts</string>
+    <string name="button_login">Login</string>
+    <string name="Staff_string">Staff Register</string>
+    <string name="Lecture_string">Lecture Register</string>
+    <string name="Student_string">Student Register</string>
+    <string name="Logout_string">Logout</string>
+    <string name="List_user">List Staff User</string>
+    <string name="List_Lecture_user">List Lecture User</string>
+    <string name="List_student_user">List Student User</string>
+    <string name="View_Data_string">View All Data</string>
+    <string name="btn_Staff_Data">Staff Data</string>
+    <string name="btn_lecture_data">Lecture Data</string>
+    <string name="btn_Student_Data">Student Data</string>
+    <string name="Course_Name">Subject Name :</string>
+    <string name="Classroom">Classroom :</string>
+    <string name="add_TimeTable">Add TimeTable</string>
+    <string name="btn_update_timetable">Update TimeTable</string>
+    <string name="btn_Search_TimeTable">Search TimeTable</string>
+    <string name="Manage">Manage</string>
+    <string name="Main">Home</string>
+    <string name="Add">Add</string>
+    <string name="ListData">List Data</string>
+    <string name="add_record">Add Record</string>
+    <string name="empty_list_text">No Record</string>
+    <string name="btn_Upload_event">Upload Event</string>
+    <string name="Event_manage">Manage Customer Event</string>
+    <string name="btn__manage_timetable">Manage TimeTable</string>
+    <string name="List_Time_Table">TimeTable</string>
+    <string name="btn_Upload_events">Upload TMC Event</string>
+    <string name="Event_manager">TMC Event</string>
+    <string name="btn_timetable"><![CDATA[TimeTable For Lecture & Student]]></string>
+    <string name="btn_list">List Data</string>
+    <string name="List_Guest_user">List Guest</string>
+    <string name="List_SCSuser">List Singapore Computer Society\'s (SCS) Student Membership.</string>
+    <string name="View_TimeTable">View TimeTable</string>
+    <string name="manage_scs">Manage Register SCS</string>
+    <string name="btn_Upload">View Upload PDF</string>
+    <string name="Register_scs">Register SCS member</string>
+    <string name="Help_string">Help</string>
+    <string name="List_View_Event">List Event</string>
+    <string name="btn_events">TMC Event</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+
+    <string-array name="state_arrays">
+        <item>Full-Time</item>
+        <item>Part-Time</item>
+    </string-array>
+
+    <string-array name="Type_arrays">
+        <item>Full-Time</item>
+        <item>Part-Time</item>
+        <item>Short-Course</item>
+
+    </string-array>
+
+    <string-array name="Course_arrays">
+        <item>Accounting and Finance</item>
+        <item>Business</item>
+        <item>Hospitality and Tourism</item>
+        <item>Infocom Technology</item>
+        <item>Mass Communication"</item>
+        <item>Psychology"</item>
+    </string-array>
+    <string name="title_activity_bottomnavigation">Bottomnavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Course">Course</string>
+    <string name="About_Us">About Us</string>
+    <string name="View_event">View Event</string>
+    <string name="Contact_Us">Contact Us</string>
+    <string name="Login">Login</string>
+    <string name="title_activity_mainmenu">Mainmenu</string>
+    <string name="Register">Register</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

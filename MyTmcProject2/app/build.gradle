@@ -1,0 +1,68 @@
+/*
+ * Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.example.louisloh.mytmcproject2"
+        minSdkVersion 25
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        debug { res.srcDirs = ['src/debug/res', 'src/debug/res/raw'] }
+        main { res.srcDirs = ['src/main/res', 'src/main/res/raw'] }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    mavenCentral()
+    google()
+}
+dependencies {
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.google.firebase:firebase-storage:11.4.2'
+    compile 'com.google.firebase:firebase-auth:11.4.2'
+    compile 'com.google.android.gms:play-services-maps:11.4.2'
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:design:25.4.0'
+    compile 'com.android.support:support-v4:25.4.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.facebook.android:facebook-android-sdk:4.22.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'net.gotev:uploadservice:2.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:recyclerview-v7:25.4.0'
+    //    compile 'com.google.android.gms:play-services-maps:10.2.4'
+    //    compile 'com.google.android.gms:play-services-maps:11.4.2'
+    //    compile 'com.android.support:appcompat-v7:25.2.0'
+	compile 'org.apache.cordova:framework:6.1.2:release@aar'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+

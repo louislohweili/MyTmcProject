@@ -1,0 +1,61 @@
+Index: app/src/main/java/com/example/louisloh/mytmcproject2/StaffUserAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/louisloh/mytmcproject2/StaffUserAdapter.java	(revision )
++++ app/src/main/java/com/example/louisloh/mytmcproject2/StaffUserAdapter.java	(revision )
+@@ -1,4 +1,4 @@
+-package com.example.louisloh.myapplicationidiscovery2;
++package com.example.louisloh.mytmcproject2;
+ 
+ import android.content.Context;
+ import android.view.LayoutInflater;
+@@ -9,33 +9,31 @@
+ 
+ import java.util.ArrayList;
+ 
+-public class EventAdapter extends ArrayAdapter<Event> {
+-    public EventAdapter(Context context, ArrayList<Event> events) {
+-        super(context, 0, events);
++public class StaffUserAdapter extends ArrayAdapter<StaffRegister> {
++    public StaffUserAdapter(Context context, ArrayList<StaffRegister> staffRegisters) {
++        super(context, 0, staffRegisters);
+     }
+ 
+     @Override
+     public View getView(int position, View convertView, ViewGroup parent) {
+ 
+-        Event event = getItem(position);
++        StaffRegister event = getItem(position);
+ 
+         if (convertView == null){
+             convertView = LayoutInflater.from
+-                    (getContext()).inflate(R.layout.event_layout, parent, false);
++                    (getContext()).inflate(R.layout.Staff_user, parent, false);
+         }
+ 
+-        TextView textViewTitle = (TextView) convertView.findViewById(R.id.textViewTitle);
+-        TextView textViewLocation = (TextView) convertView.findViewById(R.id.textViewLocation);
+-        TextView textViewDate = (TextView) convertView.findViewById(R.id.textViewDate);
+-        TextView textViewStartTime = (TextView) convertView.findViewById(R.id.textViewStartTime);
+-        TextView textViewOrganiser = (TextView) convertView.findViewById(R.id.textViewOrganiser);
++        TextView textViewUserName = (TextView) convertView.findViewById(R.id.textViewUserName);
++        TextView textViewEmail = (TextView) convertView.findViewById(R.id.textViewEmail);
++        TextView textViewPassword = (TextView) convertView.findViewById(R.id.textViewPassword);
+ 
+ 
+-        textViewTitle.setText("Title: " + event.getTitle());
+-        textViewLocation.setText("Location: " + event.getLocation());
+-        textViewDate.setText("Date: " + event.getDate());
+-        textViewStartTime.setText("Start Time: " + event.getStarttime());
+-        textViewOrganiser.setText("Organiser: " + event.getOrganiser());
++
++        textViewUserName.setText("UserName: " + event.getStaff_Name());
++        textViewEmail.setText("Email: " + event.getStaff_Email());
++        textViewPassword.setText("Password: " + event.getStaff_Password());
++
+ 
+ 
+         return convertView;
+\ No newline at end of file
