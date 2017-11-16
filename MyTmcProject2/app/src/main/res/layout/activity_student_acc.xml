@@ -86,7 +86,8 @@
             android:layout_width="114dp"
             android:layout_height="70dp"
             android:onClick="SetDate"
-            app:srcCompat="@drawable/date" />
+            app:srcCompat="@drawable/date"
+            tools:ignore="OnClick" />
 
         <TextView
             android:id="@+id/textView15"

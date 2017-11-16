@@ -73,8 +73,8 @@
 
             <ImageButton
                 android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0.24"
                 android:onClick="onTimeClicked"
                 app:srcCompat="@drawable/time" />
@@ -82,7 +82,7 @@
             <ImageButton
                 android:id="@+id/BtnSeleteDate"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="82dp"
                 android:layout_weight="0.28"
                 android:onClick="onDateClicked"
                 app:srcCompat="@drawable/date" />
