@@ -29,7 +29,7 @@ Button TimeTable ,Register,pdfUpload;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_main);
-        TimeTable = (Button) findViewById(R.id.btnManageTimeTable);
+        TimeTable = (Button) findViewById(R.id.btnTimeTable);
         Register = (Button) findViewById(R.id.btnRegister);
         pdfUpload = (Button) findViewById(R.id.btnUpload);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -60,7 +60,7 @@ Button TimeTable ,Register,pdfUpload;
     @Override
     public boolean onCreateOptionsMenu(Menu menustafflogout) {
         MenuInflater mMenuInflater =getMenuInflater();
-        mMenuInflater.inflate(R.menu.menu, menustafflogout);
+        mMenuInflater.inflate(R.menu.menustafflogout, menustafflogout);
         return true;
     }
     @Override

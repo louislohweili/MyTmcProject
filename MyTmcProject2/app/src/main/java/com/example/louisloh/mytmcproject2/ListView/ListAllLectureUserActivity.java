@@ -54,7 +54,7 @@ public class ListAllLectureUserActivity extends AppCompatActivity {
                 modify_intent.putExtra("Lecture_Email",lecture.getLecture_Email().toString());
                 modify_intent.putExtra("Lecture_State", lecture.getLecture_State().toString());
                 modify_intent.putExtra("Lecture_Course",lecture.getLecture_Course().toString());
-                modify_intent.putExtra("Lecture_Password",lecture.getLecture_Password().toString());
+                //modify_intent.putExtra("Lecture_Password",lecture.getLecture_Password().toString());
                 startActivity(modify_intent);
 
 

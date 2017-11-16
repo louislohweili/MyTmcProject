@@ -49,7 +49,7 @@ public class ListAllStudentUserActivity extends AppCompatActivity {
                 modify_intent.putExtra("Student_enrollment_date", student.getStudent_enrollment_date().toString());
                 modify_intent.putExtra("Student_Type",student.getStudent_Type().toString());
                 modify_intent.putExtra("Student_Course",student.getStudent_Course().toString());
-                modify_intent.putExtra("Student_Password",student.getStudent_Password().toString());
+                //modify_intent.putExtra("Student_Password",student.getStudent_Password().toString());
                 startActivity(modify_intent);
 
 

@@ -94,80 +94,73 @@ public class Login extends AppCompatActivity {
                     progressDialog.show();
                     Intent toy = new Intent(Login.this, AdminMain.class);
                     startActivity(toy);
-                }
-
-                 else if (sQLiteHelperL.checkUser(ed1.getText().toString().trim()
+                } else if (sQLiteHelperL.checkUser(ed1.getText().toString().trim()
                         , ed2.getText().toString().trim())) {
 
 
-                     Intent toy = new Intent(Login.this, LectureMain.class);
-                     toy.putExtra("Name", ed1.getText().toString().trim());
+                    Intent toy = new Intent(Login.this, LectureMain.class);
+                    toy.putExtra("Name", ed1.getText().toString().trim());
 
-                     startActivity(toy);
-
-
-                     Toast.makeText(getApplicationContext(),
-                             "Redirecting...", Toast.LENGTH_SHORT).show();
-                     final ProgressDialog progressDialog = new ProgressDialog(Login.this,
-                             R.style.AppTheme_Dark_Dialog);
-                     progressDialog.setIndeterminate(true);
-                     progressDialog.setMessage("Welcome to TMC Lecture ...");
-                     progressDialog.show();
-                 }
+                    startActivity(toy);
 
 
-                   else {
-                    if (sQLiteHelperSTD.checkUser(ed1.getText().toString().trim()
-                            , ed2.getText().toString().trim())) {
+                    Toast.makeText(getApplicationContext(),
+                            "Redirecting...", Toast.LENGTH_SHORT).show();
+                    final ProgressDialog progressDialog = new ProgressDialog(Login.this,
+                            R.style.AppTheme_Dark_Dialog);
+                    progressDialog.setIndeterminate(true);
+                    progressDialog.setMessage("Welcome to TMC Lecture ...");
+                    progressDialog.show();
+                } else if (sQLiteHelperSTD.checkUser(ed1.getText().toString().trim()
+                        , ed2.getText().toString().trim())) {
 
 
-                        Intent toys = new Intent(Login.this, StudentMain.class);
-                        toys.putExtra("Name", ed1.getText().toString().trim());
+                    Intent toys = new Intent(Login.this, StudentMain.class);
+                    toys.putExtra("Name", ed1.getText().toString().trim());
 
-                        startActivity(toys);
+                    startActivity(toys);
 
 
 
-                        Toast.makeText(getApplicationContext(),
-                                "Redirecting...", Toast.LENGTH_SHORT).show();
-                        final ProgressDialog progressDialog = new ProgressDialog(Login.this,
-                                R.style.AppTheme_Dark_Dialog);
+                    Toast.makeText(getApplicationContext(),
+                            "Redirecting...", Toast.LENGTH_SHORT).show();
+                    final ProgressDialog progressDialog = new ProgressDialog(Login.this,
+                            R.style.AppTheme_Dark_Dialog);
 
-                        progressDialog.setIndeterminate(true);
-                        progressDialog.setMessage("Welcome to TMC Lecture ...");
-                        progressDialog.show();
-                    } else {
-                        if (sQLiteHelper.checkUser(ed1.getText().toString().trim()
-                                , ed2.getText().toString().trim())) {
-
-
-                            Intent toy = new Intent(Login.this, StaffMain.class);
-                            toy.putExtra("Name", ed1.getText().toString().trim());
-
-                            startActivity(toy);
+                    progressDialog.setIndeterminate(true);
+                    progressDialog.setMessage("Welcome to TMC Student ...");
+                    progressDialog.show();
+                } else if (sQLiteHelper.checkUser(ed1.getText().toString().trim()
+                        , ed2.getText().toString().trim())) {
 
 
-                            Toast.makeText(getApplicationContext(),
-                                    "Redirecting...", Toast.LENGTH_SHORT).show();
-                            final ProgressDialog progressDialog = new ProgressDialog(Login.this,
-                                    R.style.AppTheme_Dark_Dialog);
-                            progressDialog.setIndeterminate(true);
-                            progressDialog.setMessage("Welcome to TMC Staff...");
-                            progressDialog.show();
+                    Intent toy = new Intent(Login.this, StaffMain.class);
+                    toy.putExtra("Name", ed1.getText().toString().trim());
+
+                    startActivity(toy);
+
+
+                    Toast.makeText(getApplicationContext(),
+                            "Redirecting...", Toast.LENGTH_SHORT).show();
+                    final ProgressDialog progressDialog = new ProgressDialog(Login.this,
+                            R.style.AppTheme_Dark_Dialog);
+                    progressDialog.setIndeterminate(true);
+                    progressDialog.setMessage("Welcome to TMC Staff...");
+                    progressDialog.show();
 
 
 
-                        }else {
-                            Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
-                            tx1.setVisibility(View.VISIBLE);
-                            tx1.setBackgroundColor(Color.RED);
-                            counter--;
-                            tx1.setText(Integer.toString(counter));
-                            if (counter == 0) {
-                                b1.setEnabled(false);
-                            }
-                        }
+                }else {
+                    Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
+                    tx1.setVisibility(View.VISIBLE);
+                    tx1.setBackgroundColor(Color.RED);
+                    counter--;
+                    tx1.setText(Integer.toString(counter));
+                    if (counter == 0) {
+                        b1.setEnabled(false);
                     }
+
+
                 }
             }
         });

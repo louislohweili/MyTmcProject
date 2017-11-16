@@ -196,7 +196,7 @@ public class DatabaseHelperStudentR extends SQLiteOpenHelper {
         };
         SQLiteDatabase db = this.getReadableDatabase();
         // selection criteria
-        String selection = COL_2 + " = ?" + " AND " + COL_4 + " = ?";
+        String selection = COL_2 + " = ?" + " AND " + COL_7 + " = ?";
 
         // selection arguments
         String[] selectionArgs = {Name, password};

@@ -52,7 +52,7 @@ public class ListAllStaffUserActivity extends AppCompatActivity {
                 Intent modify_intent = new Intent(getApplicationContext(), modifyStaffAcc.class);
                 modify_intent.putExtra("Staff_Name",staff.getStaff_Name().toString());
                 modify_intent.putExtra("Staff_Email",staff.getStaff_Email().toString());
-                modify_intent.putExtra("Password", staff.getStaff_Password().toString());
+                //modify_intent.putExtra("Password", staff.getStaff_Password().toString());
                 startActivity(modify_intent);
 
                     }

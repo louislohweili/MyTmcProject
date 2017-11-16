@@ -66,7 +66,7 @@ public class LectureMain extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menustafflogout) {
         MenuInflater mMenuInflater =getMenuInflater();
-        mMenuInflater.inflate(R.menu.menu, menustafflogout);
+        mMenuInflater.inflate(R.menu.menustafflogout, menustafflogout);
         return true;
     }
     @Override
